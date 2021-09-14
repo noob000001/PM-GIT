@@ -17,3 +17,10 @@ git commit : commit에 대한 메세지를 남기기 위해 vi 에디터가 실�
 git commit -m 'message' : commit을 하고 commit에 대한 간단한 메세지 작성
 git log : commit 내역 확인
 
+5. 특정 commit 지점으로 되돌리기
+  1) git log 또는 git reflog를 통해 commit id 확인
+git reset --soft<commit> : commit 내역을 되돌리고, commit 만 취소(staging area)
+git reset --mixed<commit> : commit 내역을 되돌리고 staging 까지 취소
+----------파일에 영향 x-------------------
+git reset --hard<commit> : commit 내역을 되돌리고 파일을 rollback
+
