@@ -1,0 +1,13 @@
+1. 계정 정보 등록
+git config --global user.name '사용자명'
+git config --global user.email '사용자이메일'
+
+2. git-prac 폴더를 git이 관리하는 폴더로 지정
+git init
+
+3. 기본으로 생성되는 master 브랜치에서 main브랜치로 변경
+git checkout -b main : main브랜치를 생성하고 해당 브랜치로 이동
+git branch -M main : 기본브랜치를 main브랜치로 지정
+git status : 상태확인
+
+
