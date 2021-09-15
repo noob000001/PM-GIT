@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [userB] git 충돌 연습
+=======
+[userA] git 충돌 연습
+>>>>>>> 2a84f674abe8ac7f7186e33a8d52df52c3d1706d
