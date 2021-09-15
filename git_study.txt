@@ -23,4 +23,5 @@ git reset --soft<commit> : commit 내역을 되돌리고, commit 만 취소(stag
 git reset --mixed<commit> : commit 내역을 되돌리고 staging 까지 취소
 ----------파일에 영향 x-------------------
 git reset --hard<commit> : commit 내역을 되돌리고 파일을 rollback
-
+git revert <commit> : 지정한 commit으로 인해 발생한 변경을 되돌리고, 
+		    새로운 commit을 생성해 commit 에 추가
