@@ -25,3 +25,11 @@ git reset --mixed<commit> : commit 내역을 되돌리고 staging 까지 취소
 git reset --hard<commit> : commit 내역을 되돌리고 파일을 rollback
 git revert <commit> : 지정한 commit으로 인해 발생한 변경을 되돌리고, 
 		    새로운 commit을 생성해 commit 에 추가
+6. 원격 리포지토리 추가 및 push/pull
+git remote add origin <remote repository 주소>
+git pull --allow-unrelated-histories origin main
+	*원격리포지토리에서 처음 pull 할 때만
+	--allow-unrelated-histories 옵션 사용
+git push -u origin main
+	-u : push 할 기본 원격저장소와 브랜치를 기억
+	앞으로는 git push 만 해도 원격저장소와 브랜치를 잡아준다.
